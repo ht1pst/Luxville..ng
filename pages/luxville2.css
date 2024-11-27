@@ -590,3 +590,24 @@ footer{
     padding: 20px;
     color: white;
 }
+@media (max-width: 475px){
+.header .headerimg img{
+    width:100px;
+}
+    .header .navbar ul li a{
+  font-size: 7px;  
+}
+.header .btn button{
+    width: 40px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+.section1{
+    height: 400px;
+}
+.section1 .section1text h1{
+font-size: 30px;
+margin-top: -50px;
+}
+
+}
