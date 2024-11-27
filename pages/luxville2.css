@@ -1,0 +1,585 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    max-width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+   position: fixed;
+    width: 100%;
+    height: 10%;
+margin-top: -120px;
+}
+.header .navbar ul{
+    display: flex;
+    padding: 34px;
+    list-style: none;
+    margin-top: -10px;
+}
+.header .navbar ul a{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    list-style: none;
+    transition: 0.3s ease;
+}
+.header .navbar ul a:hover{
+    color: #1a4d2e;
+    text-decoration: underline;
+    line-height: 20px;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+.header .headerimg{
+    margin-top: -35px;
+}
+.header .headerimg img{
+    width: 150px;
+    height: 150px;
+}
+.header .btn{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.header .btn button{
+    background-color: #1a4d2e;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s ease;
+}
+.header .btn button:hover{
+background-color: white;
+}
+.header .btn a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+.header .btn a:hover{
+color: black;
+background-color: wh;
+}
+.section1{
+    background-image: url(../images/back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    margin-left: 15px;
+    border-radius: 20px;
+    margin-top: 120px;
+    margin-right: 15px;
+}
+.section1 .section1text{
+    margin-top: 150px;
+    color: white;
+   
+    
+}
+.section1 .section1text h1{
+    font-size: 45px;
+    width: 500px;   
+}
+@keyframes slideInleft{
+    from{
+transform: translateX(-200px);
+    }
+
+    to{
+transform: translateX(0);
+
+    }
+}
+.section1 .section1text h1{
+    animation: slideInleft 1s ease 0s 1 normal none;
+}
+
+
+.section1 .btn2{
+    margin-top: 30px;
+}
+.section1 .btn2 button{
+    background-color: #1a4d2e;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s ease;
+}
+@keyframes slideInup{
+    from{
+transform: translateY(100px);
+    }
+
+    to{
+transform: translateY(0);
+    }
+}
+.section1 .btn2 button{
+    animation: slideInup 1s ease 0s 1 normal none;
+}
+.section1 .btn2 button:hover{
+    background-color: white;
+}
+.section1 .btn2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.section1 .btn2 a:hover{
+    color: black;
+}
+.section2{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 30px;
+    margin-top: 100px;
+}
+@keyframes img{
+    from{
+transform: translateX(-200px);
+    }
+
+    to{
+transform: translateX(0);
+    }
+}
+
+.section2 .section2img{
+    animation: img 1s ease 5s 1 normal none;
+}
+.section2 .section2img{
+    margin-left: 50px;
+}
+@keyframes sectt2{
+    from{
+transform: translateX(200px);
+    }
+
+
+    to{
+transform: translateX(0);
+    }
+}
+.section2 .section2text{
+animation: sectt2 1s ease 5s 1 normal none;
+}
+.section2 .section2img img{
+width: 450px;
+height: 300px;
+border-radius: 30px;
+border-top-right-radius: 0px;
+margin-left: 30px;
+}
+.section2 .section2text a{
+    color: #1a4d2e;
+    text-decoration: none;
+    margin-top: -20px;
+}
+.section2 .section2text h1{
+    font-weight: bold;
+    width: 350px;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.section2 .section2text p{
+    width: 400px;
+    margin-top: 10px;
+    color: rgb(83, 83, 83);
+    line-height: 25px;
+}
+.section2 .section2text  button{
+    background-color: #1a4d2e;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+.section2 .section2text  button a{
+    color: white;
+}
+.section3{
+    display: flex;
+    text-align: center;
+    padding: 30px;
+    gap: 500px;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+@keyframes slide1{
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.section3 .section3text1{
+    animation: slide1 1s ease 8s 1 normal none;
+}
+.section3 .section3text1{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    height: 200px;
+    text-align: center;
+   padding-top: 50px;
+   transition: 0.3s ease;
+}
+.section3 .section3text1:hover{
+background-color: #1a4d2e;
+color: white;
+}
+.section3 img{
+width: 20px;
+}
+.section3 p{
+    width: 350px;
+   margin-top: 10px;
+}
+@keyframes slide2{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.section3 .section3text2{
+    animation: slide2 1s ease 8s 1 normal none;
+}
+.section3 .section3text2{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    height: 200px;
+    text-align: center;
+   padding-top: 50px;
+   width: 350px;
+   transition: 0.3s ease;
+}
+.section3 .section3text2:hover{
+    background-color: #1a4d2e;
+    color: white;
+    }
+.section4{
+    margin-left: 460px;
+    margin-top: 30px;
+}
+.section4 img{
+    width: 20px;
+    }
+    @keyframes slide3{
+        from{
+            transform: translateY(-300px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    .section4 .section4text1{
+        animation: slide3 1s ease 8s 1 normal none;
+    }
+.section4 .section4text1{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    height: 200px;
+    text-align: center;
+   padding-top: 50px;
+   width: 350px;
+   background-color: #1a4d2e;
+   color: white;
+}
+.section4 p{
+    width: 350px;
+   margin-top: 10px;
+}
+.section5{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.section5 .section5text a{
+    text-decoration: none;
+    color: #1a4d2e;
+    font-size: 20px;
+}
+.section5 .section5text h1{
+margin-top: 10px;
+}
+.section5 .section5text p{
+    width: 500px;
+    margin-left: 380px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.section6{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+}
+.section6 p{
+    font-weight: bold;
+}
+.section6 img{
+    width: 160px;
+    height: 180px;
+    border-radius: 10px;
+}
+.section6 .section6text1{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.section6 .section6text1:hover{
+    margin-top: -10px;
+}
+.section6 .section6text1 .pp{
+    margin-left: 50px;
+    margin-bottom: px;
+}
+.section6 .section6text1 .ikate{
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+   
+}
+.section6 .section6text1 .ikate img{
+    width: 20px;
+    height: 20px;
+}
+.section6 .section6text2{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.section6 .section6text2:hover{
+    margin-top: -10px;
+}
+.section6 .section6text2 .pp{
+    margin-left: 50px;
+}
+.section6 .section6text2 .ikate{
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+}
+.section6 .section6text2 .ikate img{
+    width: 20px;
+    height: 20px;
+}
+.section6 .section6text3{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.section6 .section6text3:hover{
+    margin-top: -10px;
+}
+.section6 .section6text3 .pp{
+    margin-left: 50px;
+}
+.section6 .section6text3 .ikate{
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+}
+.section6 .section6text3 .ikate img{
+    width: 20px;
+    height: 20px;
+}
+
+.section7{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+.section7 p{
+    font-weight: bold;
+}
+.section7 img{
+    width: 160px;
+    height: 180px;
+    border-radius: 10px;
+}
+.section7 .section7text1{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.section7 .section7text1:hover{
+    margin-top: -10px;
+}
+.section7 .section7text1 .pp{
+    margin-left: 50px;
+}
+.section7 .section7text1 .ikate{
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+   
+}
+.section7 .section7text1 .ikate img{
+    width: 20px;
+    height: 20px;
+}
+.section7 .section7text2{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.section7 .section7text2:hover{
+    margin-top: -10px;
+}
+.section7 .section7text2 .pp{
+    margin-left: 50px;
+}
+.section7 .section7text2 .ikate{
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+}
+.section7 .section7text2 .ikate img{
+    width: 20px;
+    height: 20px;
+}
+.section7 .section7text3{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    transition: 0.3s ease;
+
+}
+.section7 .section7text3:hover{
+    margin-top: -10px;
+}
+.section7 .section7text3 .pp{
+    margin-left: 50px;
+}
+.section7 .section7text3 .ikate{
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+}
+.section7 .section7text3 .ikate img{
+    width: 20px;
+    height: 20px;
+}
+.section8{
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.section8 .section8text form{
+display: flex;
+gap: 10px;
+margin-left: 35%;
+}
+.section8 .section8text form .inp1 input{
+width: 350px;
+border-radius: 25px;
+height: 50px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+border: none;
+margin-top: 20px;
+}
+.section8 .section8text form .inp1 input::placeholder{
+    font-size: 18px;
+    padding-left: 20px;
+}
+.section8 .section8text h1{
+    width: 390px;
+    text-align: center;
+    margin-left: 37%;
+    font-size: 30px;
+}
+.section8 .section8text button{
+    background-color: #1a4d2e;
+    color: white;
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: none;
+    transition: 0.3s ease;
+}
+.section8 .section8text button:hover{
+    background-color: white;
+    color: #1a4d2e;
+}
+.section9{
+    display: flex;
+   justify-content: space-between;
+   background-color: #1a4d2e;
+   color: white;
+   padding: 40px;
+   border-top-left-radius: 70px;
+   margin-top: 30px;
+}
+.section9 .section9text2 ul{
+    list-style: none;
+    color: white;
+    line-height: 30px;
+}
+.section9 .section9text2 ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+.section9 .section9text2 ul li a:hover{
+    color: black;
+
+}
+.section9 .section9text3 ul{
+    list-style: none;
+    line-height: 30px;
+}
+.section10{
+    background-color: #1a4d2e;
+}
+.section10 ul{
+    line-height: 30px;
+    padding: 20px;
+    list-style: none;
+    color: white;
+}
+
+.section10 img{
+    width: 20px;
+}
+.section10img{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+footer{
+    text-align: center;
+    background-color: #1a4d2e;
+    padding: 20px;
+    color: white;
+}
