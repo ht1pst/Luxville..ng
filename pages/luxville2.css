@@ -50,7 +50,7 @@ nav li:first-child{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 200px;
     width: 250px;
     background-color: rgb(194, 193, 193);
     backdrop-filter: blur(10px);
