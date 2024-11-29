@@ -18,25 +18,54 @@ body{
     height: 10%;
    margin-top: -120px;
 }
-.header .navbar ul{
-    display: flex;
-    padding: 34px;
-    list-style: none;
-    margin-top: -10px;
+nav{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-.header .navbar ul a{
-    text-decoration: none;
-    padding: 20px;
-    color: black;
+nav ul{
+    width: 100%;
     list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
     transition: 0.3s ease;
 }
-.header .navbar ul a:hover{
-    color: #1a4d2e;
-    text-decoration: underline;
-    line-height: 20px;
-    transform: scale(1.2);
-    font-weight: bold;
+nav a:hover{
+    background-color: gainsboro;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(194, 193, 193);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1) ;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
 }
 .header .headerimg{
     margin-top: -35px;
@@ -45,33 +74,11 @@ body{
     width: 150px;
     height: 150px;
 }
-.header .btn{
-    margin-right: 20px;
-    margin-top: 10px;
-}
-.header .btn button{
-    background-color: #1a4d2e;
-    width: 100px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    transition: 0.3s ease;
-}
-.header .btn button:hover{
-background-color: white;
-}
-.header .btn a{
-    text-decoration: none;
-    color: white;
-    transition: 0.3s ease;
-}
-.header .btn a:hover{
-color: black;
-background-color: wh;
-}
+
 body{
     max-width: 100%;
 }
+
 .section1{
     background-image: url(../images/back.png);
     background-repeat: no-repeat;
@@ -84,9 +91,7 @@ body{
     border-radius: 20px;
     margin-top: 120px;
     margin-right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     
 }
 .section1 .section1text{
@@ -614,6 +619,11 @@ footer{
 }
 @media (max-width: 475px)
 {
+.hideOnMobile{
+    display: none;
+}
+
+ 
     body{
         width: 100%;
         height: 100%;
@@ -622,7 +632,8 @@ footer{
         overflow-x: hidden;
     }
 .header .headerimg img{
-    width:100px;
+    width:150px;
+    height: 150px;
 }
     .header .navbar ul li a{
   font-size: 7px;  
@@ -667,6 +678,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .section6{
